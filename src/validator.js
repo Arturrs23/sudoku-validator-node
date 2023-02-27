@@ -47,9 +47,7 @@ class Validator {
 
       // if there are duplicates in row col or 3x3 field then invalid
       if (
-        rows[row].has(digit) ||
-        cols[col].has(digit) ||
-        fields[field].has(digit)
+        rows[row].has(digit) || cols[col].has(digit) || fields[field].has(digit)
       ) {
         return "Sudoku is invalid.";
       }
